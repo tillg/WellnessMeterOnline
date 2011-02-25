@@ -1,0 +1,7 @@
+# .gitignore file of the WellnessMeterOnline project
+# Set up by Till, Feb 25, 2011
+
+# Ignore appengine-generated stuff
+war/WEB-ING/appengine-generated/*
+
+

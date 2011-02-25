@@ -1,0 +1,13 @@
+
+<%@ page import="com.tillg.util.TillGUser" %>
+<%@ page import="java.net.URLEncoder" %>
+
+<% 	
+	TillGUser user = new TillGUser ();
+	boolean loginNotRequired = false;
+	String nextpage = request.getParameter("nextpage");
+	if (nextpage == null)
+		nextpage = "/index.jsp";
+	
+%>
+

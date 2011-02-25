@@ -1,0 +1,11 @@
+
+<% 	
+	if (!loginNotRequired) {
+		if (!user.isLoggedIn()) {
+			// response.sendRedirect("login.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp?nextpage=" + request.getRequestURI());
+			rd.forward(request, response);
+		}
+	}
+%>
+

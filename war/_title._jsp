@@ -1,0 +1,22 @@
+
+<div class='menu_container'>
+	<div class='menu'><a href='index.jsp'>Zuhause</a></div>
+	<div class='menu'><a href='mywellness.jsp'>Meine Wellness</a></div>
+	<div class='menu'><a href='todo.jsp'>Demn&auml;chst</a></div>
+	
+	<% if (user.isLoggedIn()) { %>
+			<div class='menu'><a href='<%=user.getLogoutURL("/index.jsp") %>'>Abmelden</a></div>
+	<% } else { %>
+			<div class='menu'><a href='login.jsp'>Anmelden</a></div>
+	<% } %>
+</div>
+<br/>
+<% if (user.isLoggedIn()) { %>
+		<div class='loginname'><%=user.getNickname() %></div>
+<% } else { %>
+		<!-- nextpage: <%=nextpage %> -->
+<% } %>
+
+<br/>
+<div class="wellnessmeter">wellness-O-meter</div>
+<br/>

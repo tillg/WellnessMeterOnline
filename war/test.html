@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	body { text-align: center; margin: 5em 0 0 0; vertical-align: middle; font: 62.5% "Trebuchet MS",sans-serif; }
+	#content { width: 760px; text-align: left; margin: 0 auto }
+</style>
+<link type="text/css" href="css/smoothness/jquery-ui-1.8.9.custom.css" rel="Stylesheet" />
+</head>
+<body>
+
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.9.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker-de.js"></script>
+<script>
+$(document).ready(function(){
+	$('#date').datepicker({ dateFormat: 'yy/mm/dd' });
+ });
+</script>
+
+
+
+<div id="content">
+This is some text that will be centered on the page. It is an example that you can try out immediately. Just cut and paste this 
+whole snippet into a file named example.htm and then view it in your browser.
+</div>
+
+<input type="text" name="date" id="date" />
+
+
+</body>
+</html>
