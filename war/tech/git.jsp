@@ -17,36 +17,44 @@
 <h2>Standard workflow</h2>
 <ul>
 	<li>Do some programming.
-	<li>git status to see what files I changed.
-	<li>git diff [file] to see exactly what I modified.
-	<li>git commit -a -m [message] to commit. 
+	<li><tt>git status</tt> to see what files I changed.
+	<li><tt>git diff [file]</tt> to see exactly what I modified.
+	<li><tt>git commit -a -m [message]</tt> to commit (into my local repo).
+	<li><tt>git push</tt> to push the changes to GitHub. 
 </ul>
+
+<h2>Branching</h2>
+
+For more details see <a href="http://www.eecs.harvard.edu/~cduan/technical/git/git-2.shtml">here</a>.
+
+<h2>Merging</h2>
+For more details see <a href="http://www.eecs.harvard.edu/~cduan/technical/git/git-3.shtml">here</a>.
     
 <h2>Initial steps</h2>
 <b>Global setup</b>
 <ul>
 	<li>Download and install Git
-	<li>git config --global user.name "Till Gartner"
-	<li>git config --global user.email till.gartner@gmail.com
+	<li><tt>git config --global user.name "Till Gartner"</tt>
+	<li><tt>git config --global user.email till.gartner@gmail.com</tt>
 </ul>    
 
 <b>Next steps</b>
 <ul>
-	<li>mkdir WellnessMeterOnline
-	<li>cd WellnessMeterOnline
-	<li>git init
-	<li>touch README
-	<li>git add README
-	<li>git commit -m 'first commit'
-	<li>git remote add origin <i>git@github.com:tillg/WellnessMeterOnline.git</i>
-	<li>git push -u origin master
+	<li><tt>mkdir WellnessMeterOnline</tt>
+	<li><tt>cd WellnessMeterOnline</tt>
+	<li><tt>git init</tt>
+	<li><tt>touch README</tt>
+	<li><tt>git add README</tt>
+	<li><tt>git commit -m 'first commit'</tt>
+	<li><tt>git remote add origin <i>git@github.com:tillg/WellnessMeterOnline.git</i></tt>
+	<li><tt>git push -u origin master</tt>
 </ul>
 
 <b>Existing Git Repo?</b>
 <ul>
-	<li>cd existing_git_repo
-	<li>git remote add origin <i>git@github.com:tillg/WellnessMeterOnline.git</i>
-	<li>git push -u origin master
+	<li><tt>cd existing_git_repo</tt>
+	<li><tt>git remote add origin <i>git@github.com:tillg/WellnessMeterOnline.git</i></tt>
+	<li><tt>git push -u origin master</tt>
 </ul>
       
 
